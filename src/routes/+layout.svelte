@@ -2,6 +2,8 @@
     /** @type {import('./$types').LayoutData} */
 
     import '@public/global.css';
+    import "../app.css";
+
     
 </script>
 
