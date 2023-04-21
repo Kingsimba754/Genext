@@ -20,7 +20,7 @@ html, body {
 :root {
     /* background colors */
     --primary-col: royalblue;
-
+    --primary-col-desaturated: rgb(132, 162, 252);
     /* other colors */
     --white-col: white;
 }
@@ -88,6 +88,10 @@ html, body {
 /* --------------- *
  *   APPLICATION   *
  * --------------- */
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
     position: fixed;
     background-color: var(--primary-col);
@@ -99,7 +103,7 @@ nav.show {
     transform: translateY(0);
 }
 
-nav > .nav-item {
+.nav-item {
     display: grid;
     place-items: center;
     min-height: 5.5rem;
@@ -107,6 +111,13 @@ nav > .nav-item {
     font-size: 2rem;
     text-decoration: none;
     color: white;
+    border-radius: 0.4rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.nav-item:hover {
+    background-color: var(--primary-col-desaturated);
+
 }
 
 section:is(.gene-search, .about) {

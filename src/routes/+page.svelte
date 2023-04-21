@@ -1,8 +1,8 @@
-<section class="gene-search">
+<section id="gene-search" class="gene-search">
     <form action="#">
         <input type="text" class="gene-search-input">
     </form>
 </section>
-<section class="about">
+<section id="about" class="about">
 
 </section>
