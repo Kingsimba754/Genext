@@ -1,6 +1,8 @@
 <script>
     /** @type {import('./$types').LayoutData} */
-    export let data;
+
+    import '@public/global.css';
+    
 </script>
 
 <div class="page-container">
@@ -11,6 +13,6 @@
         <slot />
     </main>
     <footer>
-        
+
     </footer>
 </div>
