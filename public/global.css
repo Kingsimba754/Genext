@@ -89,8 +89,14 @@ html, body {
  *   APPLICATION   *
  * --------------- */
 nav {
-    position: absolute;
+    position: fixed;
     background-color: var(--primary-col);
+    transform: translateY(-100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+nav.show {
+    transform: translateY(0);
 }
 
 nav > .nav-item {
