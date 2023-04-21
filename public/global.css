@@ -19,6 +19,7 @@ html, body {
  * ---------- */
 :root {
     /* background colors */
+    --primary-col: royalblue;
 
     /* other colors */
     --white-col: white;
@@ -87,3 +88,26 @@ html, body {
 /* --------------- *
  *   APPLICATION   *
  * --------------- */
+nav {
+    position: absolute;
+    background-color: var(--primary-col);
+}
+
+nav > .nav-item {
+    display: grid;
+    place-items: center;
+    min-height: 5.5rem;
+    min-width: 8rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+section:is(.gene-search, .about) {
+    min-height: 100vh;
+}
+
+section.gene-search {
+    display: grid;
+    place-items: center;
+}
